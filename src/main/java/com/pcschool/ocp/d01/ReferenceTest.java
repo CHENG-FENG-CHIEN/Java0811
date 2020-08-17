@@ -1,7 +1,6 @@
 
 package com.pcschool.ocp.d01;
 
-import com.sun.xml.internal.fastinfoset.algorithm.HexadecimalEncodingAlgorithm;
 
 public class ReferenceTest {
      public static void main(String[] args) {
