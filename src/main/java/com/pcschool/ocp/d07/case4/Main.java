@@ -56,6 +56,23 @@ public class Main {
                .getAverage();
        
         System.out.printf("女生平均薪資: %.1f\n",favg);
+        
+        double mavgage = Arrays.stream(programmers)
+                .filter(p ->p.getSex().equals("m"))
+                .mapToInt(p -> p.getAge())
+                .summaryStatistics()
+                .getAverage();
+        System.out.printf("男生平均年齡: %.1f"+"歲",mavgage);
+        System.out.println();
+        
+        
+double fageAvg = Arrays.stream(programmers)
+                               .filter(p -> p.getSex().equals("f"))
+                               .mapToInt(p -> p.getAge())
+                               .summaryStatistics()
+                               .getAverage();
+        System.out.printf("女生平均年齡: %,.1f"+"歲", fageAvg);
+        
         }
     }
 
