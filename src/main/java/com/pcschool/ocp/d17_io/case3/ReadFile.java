@@ -1,4 +1,3 @@
-  
 package com.pcschool.ocp.d17_io.case3;
 
 import java.io.File;
