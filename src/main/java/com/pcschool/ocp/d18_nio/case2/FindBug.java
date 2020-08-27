@@ -1,4 +1,4 @@
-package com.pcschool.ocp.d18_nio.case1.case2;
+package com.pcschool.ocp.d18_nio.case2;
 
 import java.io.IOException;
 import java.nio.file.Files;
