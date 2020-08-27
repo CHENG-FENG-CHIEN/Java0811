@@ -11,12 +11,13 @@ public class BookDao {
     private static final BookDao dao = new BookDao();
     private Connection conn;
     private BookDao() {
-        String jdbcUrl = "jdbc:derby://localhost:1527/demo"; // 資料庫的位置在哪裡 ?
+        String jdbcUrl = "jdbc:derby://localhost:1527/dmeo"; // 資料庫的位置在哪裡 ?
         String username = "app";
         String password = "app";
         try {
             conn = DriverManager.getConnection(jdbcUrl, username, password);
         } catch (Exception e) {
+            e.printStackTrace();
         }
     }
     

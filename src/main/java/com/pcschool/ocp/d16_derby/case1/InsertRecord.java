@@ -15,8 +15,8 @@ public class InsertRecord {
         String sql = "INSERT INTO book(bname, price) VALUES(?, ?)";
         PreparedStatement pstmt = conn.prepareStatement(sql);
         // 設定資料表欄位內容(1代表第1個問號的內容, 2代表第2個問號的內容, ...)
-        pstmt.setString(1, "VB"); 
-        pstmt.setInt(2, 300);
+        pstmt.setString(1, "java"); 
+        pstmt.setInt(2, 500);
         // 進行更新 (rowcount 會得到異動筆數)
         int rowcount = pstmt.executeUpdate();
         if(rowcount > 0) {

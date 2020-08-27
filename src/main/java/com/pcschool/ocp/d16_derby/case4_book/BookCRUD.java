@@ -60,6 +60,7 @@ public class BookCRUD {
             int rowcount = pstmt.executeUpdate();
             return rowcount > 0 ? true : false;
         } catch (Exception e) {
+            e.printStackTrace();
         }
         return false;
     }
